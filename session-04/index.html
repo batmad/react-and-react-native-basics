@@ -4,336 +4,114 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QTemu Meetup</title>
-  <style>
-    * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-body {
-  background-color: #f5f5f5;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #333;
-  padding: 10px 20px;
-  color: #fff;
-}
-
-.left-section {
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  font-size: 1.5em;
-  margin-right: 20px;
-}
-
-.nav a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-.login {
-  color: #fff;
-}
-
-.container {
-  width: 100%;
-  margin: 20px auto;
-}
-
-.contain-header {
-  
-    background-color: #d0d0d0;
-  padding: 10px;
-  margin-top: -15px;
-  margin-right: 5px;
-  margin-left: 5px;
-  margin-bottom: 20px;
-/*   widht: 1000px; */
-/*   border-radius: 8px; */
-  display: flex;
-  align-items: center;
-}
-
-
-.meetup {
-/*   background-color: #e0e0e0; */
-  padding: 20px;
-  border-radius: 8px;
-}
-
-/* .meetup-header {
-  
-    background-color: #d0d0d0;
-  padding: 10px;
-  margin-top: -30px;
-  display: flex;
-  align-items: center;
-}
- */
-.meetup-image {
-  width: 200px;
-  height: 200px;
-  background-color: #aaa;
-  margin-right: 20px;
-/*   border-radius: 8px; */
-}
-
-.meetup-info h1 {
-  font-size: 1.8em;
-  margin-bottom: 10px;
-}
-
-.meetup-info p {
-  margin-bottom: 15px;
-}
-
-.meetup-info button {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-/*   border-radius: 5px; */
-  cursor: pointer;
-  width: 150px;
-}
-
-.meetup-content {
-  background-color: #ccc;
-  padding: 15px;
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-/*   border-radius: 8px; */
-}
-
-.meetup-content h2 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-.date {
-  color: #999;
-  font-size: 0.9em;
-  margin-bottom: 10px;
-}
-
-.about-meetup {
-  padding: 10px;
-  margin-top: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
-  border-radius: 8px;
-}
-
-.organizers {
-  background-color: #d0d0d0;
-  padding: 20px;
-  margin-top: 20px;
-   margin-left: 20px;
-  margin-right: 20px;
-/*   border-radius: 8px; */
-}
-.members-header {
-  display: flex;            /* Menggunakan Flexbox */
-  justify-content: space-between; /* Menyebar elemen ke kiri dan kanan */
-  align-items: center;      /* Menyelaraskan elemen secara vertikal */
-  margin-top: 30px;         /* Menambahkan margin atas untuk "Members" */
-}
-
-.members-header h2 {
-  margin: 0; /* Menghapus margin default pada h2 */
-}
-
-.members-header p {
-  margin: 0; 
-  /* Menghapus margin default pada p */
-  margin-right: 20px; 
-  cursor: pointer; /* Menambahkan kursor pointer agar terlihat seperti link */
-}
-
-.organizer-profile {
-  display: flex;
-  align-items: center;
-}
-
-.profile-image {
-  width: 50px;
-  height: 50px;
-  background-color: #bbb;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.profile-info p {
-  margin-bottom:5px;
-  margin-top:5px;
-}
-
-.past-meetups {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-   margin-left: 20px;
-  margin-right: 20px;
-}
-
-.meetup-card {
-  background-color: #ccc;
-  width: 30%;
-  padding: 15px;
-/*   border-radius: 8px; */
-/*   text-align: center; */
-}
-
-.meetup-card h4 {
-  font-size: 1.1em;
-  margin: 10px 0;
-}
-
-.meetup-card p {
-/*   font-size: 1.1em; */
-  margin: 10px 0;
-}
-
-.meetup-card button {
-  background-color: #333;
-  color: #fff;
-  padding: 8px 15px;
-  border: none;
-  width: 100px;
-/*   border-radius: 5px; */
-  cursor: pointer;
-}
-
-
-.contain-footer {
-  margin-top:30px;
-  margin-right:40px;
-  margin-left:40px;
-}
-
-.contain-footer p {
-  margin-top:30px;
-  text-align: center;
-}
-  </style>
+  <link rel="stylesheet" href="./styles.css">
 </head>
-<body>
 
+<body>
   <div class="header">
-    <div class="left-section">
-      <div class="logo">QTemu</div>
-      <div class="nav">
+    <div class="header-left-section">
+      <div class="header-logo">QTemu</div>
+      <div class="header-nav">
         <a href="#">Create Meetup</a>
         <a href="#">Explore</a>
       </div>
     </div>
-    <div class="login">Login</div>
+    <button>Login</button>
   </div>
 
   <div class="container">
-         <div class="contain-header">
-        <div class="meetup-image"></div>
-        <div class="meetup-info">
-          <h1>Hacktiv8 Meetup</h1>
-          <p>Location Jakarta, Indonesia</p>
-          <p>Members 1,078</p>
-          <p>Organizers Adhy Wiranata</p>
-          <button>Join Us</button>
-        </div>
+    <div class="card-header">
+      <div class="card-header-image"></div>
+      <div class="card-header-info">
+        <h1>Hacktiv8 Meetup</h1>
+        <p>Location Jakarta, Indonesia</p>
+        <p>Members 1,078</p>
+        <p>Organizers Adhy Wiranata</p>
+        <button>Join Us</button>
       </div>
+    </div>
     
-    <div class="meetup">
-<!--       <div class="meetup-header">
-        <div class="meetup-image"></div>
-        <div class="meetup-info">
-          <h1>Hacktiv8 Meetup</h1>
-          <p>Location: Jakarta, Indonesia</p>
-          <p>Members: 1,078</p>
-          <p>Organizers: Adhy Wiranata</p>
-          <button>Join Us</button>
+    <div class="card-body">
+      <div class="card-containt">
+        <div class="card-containt-header">
+          <h2>Next Meetup</h2>
         </div>
-      </div> -->
+        <div class="card-containt-body">
+          <h2>Awesome meetup and event</h2>
+          <p class="date">25 January 2019</p>
+          
+          <p>Hello, JavaScript & Node.js Ninjas!</p>
+          <p>Get ready for our monthly meetup JakartaJS! This will be our fifth meetup of 2018!</P>
+          <p>The meetup format will contain some short stories and technical talks.</p>
+          <p>If you have a short announcement you'd like to share with the audience, you may do so during open mic announcements.</p>
 
-      <h2>Next Meetup</h2>
-      <div class="meetup-content">
-        <h2>Awesome meetup and event</h2>
-        <p class="date">25 January 2019</p>
-        <p>Hello, JavaScript & Node.js Ninjas!</p></p> Get ready for our monthly meetup JakartaJS! This will be our fifth meetup of 2018!</P><p> The meetup format will contain some short stories and technical talks.</p><p> If you have a short announcement you'd like to share with the audience, you may do so during open mic announcements.</p>
-        <p style="margin-top:10px">Remember to bring a photo ID to get through building security.</p>
-        <p style="margin-top:10px">- - - - -</p>
-        <p style="margin-top:10px">See you there!</p>
-        <p style="margin-top:10px">Best, Hengki, Giovanni, Sofian, Riza, Agung - The JakartaJS Organizers</p>
+          <p class="line-spacing">Remember to bring a photo ID to get through building security.</p>
+          <p class="line-spacing">- - - - -</p>
+          <p class="line-spacing">See you there!</p>
+          <p class="line-spacing">Best, Hengki, Giovanni, Sofian, Riza, Agung - The JakartaJS Organizers</p>
+        </div>
       </div>
 
-  <h2 style="margin-top:30px;">About Meetup</h2>
-      <div class="about-meetup">
-        <p>Come and meet other developers interested in the Javascript and it's library in the Greater Jakarta area.</p>
-        <p style="margin-top:10px">Twitter: @JakartaJS and we use the hastag #jakartajs</p>
+      <div class="card-containt">
+        <div class="card-containt-header">
+          <h2>About Meetup</h2>
+        </div>
+        <div class="card-containt-body-secondary">
+          <p>Come and meet other developers interested in the Javascript and it's library in the Greater Jakarta area.</p>
+          <p class="line-spacing">Twitter: @JakartaJS and we use the hastag #jakartajs</p>
+        </div>
       </div>
 
-<!--   <h2 style="margin-top:30px;">Members</h2>
-  <p>See All</p> -->
-  <div class="members-header">
-  <h2>Members</h2>
-  <p>See All</p>
-</div>
-      <div class="organizers">
-    <div class="organizer-profile">
-        <div class="profile-image"></div>
-        <div class="profile-info">
-            <p>Organizers</p>
-            <p>Adhy Wiranata <span>4 others.</span></p>
+      <div class="card-containt">
+        <div class="card-containt-header">
+          <h2>Members</h2>
+          <p>See All</p>
         </div>
-    </div>
-</div>
+        <div class="card-containt-body">
+            <div class="card-group">
+              <div class="card-group-image"></div>
+              <div class="card-group-info">
+                <p>Organizers</p>
+                <p>Adhy Wiranata <span>4 others.</span></p>
+              </div>
+            </div>
+        </div>
+      </div>
 
-    <div class="members-header">
-  <h2>Past Meetups</h2>
-  <p>See All</p>
-</div>
-      <div class="past-meetups">
-        <div class="meetup-card">
-          <p>27 November 2017</p>
-          <hr/>
-          <h4>#39 JakartaJS April Meetup with kumparan</h4>
-          <p>139 went</p>
-          <button>View</button>
+      <div class="card-containt">
+        <div class="card-containt-header">
+          <h2>Past Meetups</h2>
+          <p>See All</p>
         </div>
-        <div class="meetup-card">
-          <p>27 October 2017</p>
-          <hr/>
-          <h4>#38 JakartaJS April Meetup with Blibli</h4>
-          <p>113 went</p>
-          <button>View</button>
+        <div class="card-containt-body-row">
+          <div class="cols-card">
+            <p>27 November 2017</p>
+            <hr />
+            <h4>#39 JakartaJS April Meetup with kumparan</h4>
+            <p>139 went</p>
+            <button>View</button>
+          </div>
+          <div class="cols-card">
+            <p>27 October 2017</p>
+            <hr />
+            <h4>#38 JakartaJS April Meetup with Blibli</h4>
+            <p>113 went</p>
+            <button>View</button>
+          </div>
+          <div class="cols-card">
+            <p>27 September 2017</p>
+            <hr />
+            <h4>#37 JakartaJS April Meetup with Hacktiv8</h4>
+            <p>110 went</p>
+            <button>View</button>
+          </div>
         </div>
-        <div class="meetup-card">
-          <p>27 September 2017</p>
-          <hr/>
-          <h4>#37 JakartaJS April Meetup with Hacktiv8</h4>
-          <p>110 went</p>
-          <button>View</button>
-        </div>
-        
       </div>
   
-    </div>
-  
-  <div class="contain-footer">
-  <hr/>
-    <p>Copyright Hactiv8 2028</p>
-  </div>
-  
+      <div class="containt-footer">
+        <hr />
+        <p>Copyright Hactiv8 2028</p>
+      </div>
   </div>
 
 </body>
